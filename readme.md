@@ -3,7 +3,7 @@
 - [x] задча 1, вариант а
 *Написал текстовый документ с описанием чего сделал вышло окло 8ч *
 - [x] задача 2, вариант а, время выполнения 2:30
-*написал скрипт папака [cron_events.php](local/php_interface/cron_events.php)*
+*написал скрипт [cron_events.php](local/php_interface/cron_events.php)*
 - [ ] задача 3
 
 #Билет 
