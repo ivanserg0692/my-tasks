@@ -130,6 +130,25 @@ use \Bitrix\Main\Localization\Loc;
 		</a>
 		<? endif; ?>
 	</div>
+    <?
+    $APPLICATION->IncludeComponent(
+        'bitrix:iblock.vote',
+        'product.vote',
+        array(
+            'CUSTOM_SITE_ID' => isset($arParams['CUSTOM_SITE_ID']) ? $arParams['CUSTOM_SITE_ID'] : null,
+            'ELEMENT_ID' => $arResult['ITEM']['ID'],
+            'ELEMENT_CODE' => '',
+            'MAX_VOTE' => '5',
+            'VOTE_NAMES' => array('1', '2', '3', '4', '5'),
+            'SET_STATUS_404' => 'N',
+            'DISPLAY_AS_RATING' => $arParams['VOTE_DISPLAY_AS_RATING'],
+            'CACHE_TYPE' => $arParams['CACHE_TYPE'],
+            'CACHE_TIME' => $arParams['CACHE_TIME']
+        ),
+        $component,
+        array('HIDE_ICONS' => 'Y')
+    );
+    ?>
 	<?
 	if (!empty($arParams['PRODUCT_BLOCKS_ORDER']))
 	{

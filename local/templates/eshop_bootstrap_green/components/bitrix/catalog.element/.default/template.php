@@ -442,7 +442,7 @@ if (!empty($arParams['LABEL_PROP_POSITION']))
 												<?
 												$APPLICATION->IncludeComponent(
 													'bitrix:iblock.vote',
-													'stars',
+													'product.vote',
 													array(
 														'CUSTOM_SITE_ID' => isset($arParams['CUSTOM_SITE_ID']) ? $arParams['CUSTOM_SITE_ID'] : null,
 														'IBLOCK_TYPE' => $arParams['IBLOCK_TYPE'],
