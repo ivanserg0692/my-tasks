@@ -7,6 +7,7 @@
 - [x] задача 3, Время 2:50
 - Сервестал по бему
 - интегрировал в католог 
+-Указал путь к верстке рейтнга [перейти](local/templates/eshop_bootstrap_green/components/bitrix/iblock.vote)
 
 ![alt -](media/screenshots/Screenshot_19.png) 
 ![alt -](media/screenshots/Screenshot_20.png)
