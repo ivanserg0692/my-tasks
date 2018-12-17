@@ -3,12 +3,11 @@
 - [x] задча 1, вариант а
 *Написал текстовый документ с описанием чего сделал вышло окло 8ч [см ответ](media/solution-task-one.docx)* 
 - [x] задача 2, вариант а, время выполнения 2:30
+- написал скрипт [cron_events.php](local/php_interface/cron_events.php)
 - Текстовый шаблон, почтового события 
 
 *Добрый день, #FIRST_NAME# #LAST_NAME#. В вашей корзине хранятся товары, которые вы еще не заказывали за последний месяц #ITEMS_LIST#.*
 
-
-- написал скрипт [cron_events.php](local/php_interface/cron_events.php)
 - ID тип почтового события 
 
 *PRODUCT_FORGOT*
