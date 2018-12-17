@@ -6,11 +6,12 @@
 *написал скрипт [cron_events.php](local/php_interface/cron_events.php)*
 - [x] задача 3, Время 2:50
 - Сервестал по бему
-- интегрировал в каьалог 
+- интегрировал в католог 
 
 ![alt -](media/screenshots/Screenshot_19.png) 
 ![alt -](media/screenshots/Screenshot_20.png)
-#Билет 
+
+# Билет 
 
 **1. Теория. Одна задача на выбор:**
 
