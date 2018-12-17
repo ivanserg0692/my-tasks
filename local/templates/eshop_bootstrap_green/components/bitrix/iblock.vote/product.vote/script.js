@@ -8,26 +8,25 @@
 	window.JCFlatVote = {
 		trace_vote: function (div, flag)
 		{
-			var my_div;
+			var my_div = div;
 			//Left from current
-			my_div = div;
 			while (my_div = my_div.previousSibling)
 			{
 				if (flag)
-					BX.addClass(my_div, 'bx-star-active');
+					BX.addClass(my_div, ' product-vote__star_active');
 				else
-					BX.removeClass(my_div, 'bx-star-active');
+					BX.removeClass(my_div, ' product-vote__star_active');
 			}
 			//current
 			if (flag)
-				BX.addClass(div, 'bx-star-active');
+				BX.addClass(div, 'product-vote__star_active');
 			else
-				BX.removeClass(div, 'bx-star-active');
+				BX.removeClass(div, 'product-vote__star_active');
 			//Right from the current
 			my_div = div;
 			while (my_div = my_div.nextSibling)
 			{
-				BX.removeClass(my_div, 'bx-star-active');
+				BX.removeClass(my_div, 'product-vote__star_active');
 			}
 		},
 
@@ -47,7 +46,7 @@
 				function (data)
 				{
 					var obContainer = BX(parent_id);
-					if (obContainer)
+					if (obContainer && data.length)
 					{
 						var obResult = BX.create('DIV');
 						obResult.innerHTML = data;
