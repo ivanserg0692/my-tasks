@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/bitrix/components/bitrix/iblock.vote/component.php" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/local/templates/eshop_bootstrap_green/components/bitrix/iblock.vote/product.vote/result_modifier.php" charset="windows-1251" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>
