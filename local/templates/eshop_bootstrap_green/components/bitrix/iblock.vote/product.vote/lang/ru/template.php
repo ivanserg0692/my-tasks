@@ -1,3 +1,3 @@
 <?
-$MESS ['T_IBLOCK_VOTE_BUTTON'] = "Голосовать";
+$MESS ['CT_BIV_RATING_TITLE'] = "Рейтинг";
 ?>

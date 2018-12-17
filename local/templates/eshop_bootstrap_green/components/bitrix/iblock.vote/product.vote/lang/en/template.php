@@ -1,3 +1,3 @@
 <?
-$MESS ['T_IBLOCK_VOTE_BUTTON'] = "Vote";
+$MESS["CT_BIV_RATING_TITLE"] = "Rating";
 ?>
