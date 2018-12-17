@@ -7,6 +7,8 @@
 
 *Добрый день, #FIRST_NAME# #LAST_NAME#. В вашей корзине хранятся товары, которые вы еще не заказывали за последний месяц #ITEMS_LIST#.*
 
+
+- написал скрипт [cron_events.php](local/php_interface/cron_events.php)
 - ID тип почтового события 
 
 *PRODUCT_FORGOT*
@@ -14,7 +16,6 @@
 ![alt -](media/screenshots/Screenshot_21.png)
 
 
-*написал скрипт [cron_events.php](local/php_interface/cron_events.php)*
 - [x] задача 3, Время 2:50
 - Сервестал по бему
 - интегрировал в католог 
