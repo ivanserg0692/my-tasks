@@ -4,6 +4,7 @@
 class ReSenderForgotProducts
 {
     const TypeEvent = 'PRODUCT_FORGOT';
+
     /**
      * @param int $userID
      * @return int[] IDS заказов за последний месяц
@@ -76,16 +77,18 @@ class ReSenderForgotProducts
             $items = $basket->getBasketItems();
 
             foreach ($items as $index => $itemBasket) {
-                if(array_search(intval($itemBasket->getProductId()), $itemsIgnore ) === false) {
+                if (array_search(intval($itemBasket->getProductId()), $itemsIgnore) === false) {
                     $arItemsResent[] = $itemBasket;
                 }
             }
-            CEvent::Send(static::TypeEvent, \Bitrix\Main\Context::getCurrent()->getSite(), [
-                'EMAIL_TO' => $arUser['EMAIL'],
-                'FIRST_NAME' => $arUser['NAME'],
-                'LAST_NAME' => $arUser['LAST_NAME'],
-                'ITEMS_LIST' => static::getTemplateProducts($arItemsResent),
-            ]);
+            if (count($arItemsResent)) {
+                CEvent::Send(static::TypeEvent, \Bitrix\Main\Context::getCurrent()->getSite(), [
+                    'EMAIL_TO' => $arUser['EMAIL'],
+                    'FIRST_NAME' => $arUser['NAME'],
+                    'LAST_NAME' => $arUser['LAST_NAME'],
+                    'ITEMS_LIST' => static::getTemplateProducts($arItemsResent),
+                ]);
+            }
 
         }
     }
